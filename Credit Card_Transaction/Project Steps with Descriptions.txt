@@ -1,0 +1,28 @@
+Project Steps with Descriptions:
+1. Importing the Libraries
+Description: The necessary libraries, such as pandas for data manipulation, matplotlib for plotting, and seaborn for advanced visualizations, have been imported to facilitate data analysis and visualization.
+2. Loading the Dataset
+Description: The dataset has been loaded into a Pandas DataFrame from the specified path to allow for data processing and analysis.
+3. Selecting Relevant Features
+Description: The 'Transaction ID' column has been excluded, and a subset of the data has been created with selected features that are relevant to the analysis of fraudulent transactions.
+4. Visualizing the Data
+Description: A grid for subplots has been set up, and count plots for each feature have been created to visualize the distribution of normal and fraudulent transactions. This helps in understanding the relationship between features and the target variable.
+5. Inspecting the Dataset
+Description: The first and last few rows of the dataset have been displayed to get an overview of the data. Additionally, the dataset's structure and data types have been reviewed using the info() method.
+6. Encoding Categorical Variables
+Description: Categorical variables have been transformed into numerical values using Label Encoder to prepare the data for machine learning algorithms that require numerical input.
+7. Data Cleaning and Validation
+Description: Missing values have been checked and handled appropriately. For instance, the 'Amount' column has been converted to numeric format, and missing values in various columns have been filled with appropriate measures, such as the median or mode.
+8. Exploratory Data Analysis (EDA)
+Description: Various plots, including a correlation matrix and count plots, have been created to explore the data and understand the relationships between different features and the target variable (Fraud). Statistical measures of both normal and fraudulent transactions have also been compared.
+9. Handling Imbalanced Dataset
+Description: The dataset, being highly unbalanced, has been addressed by performing under-sampling to create a sample dataset with a similar distribution of normal and fraudulent transactions. This ensures a balanced dataset for model training.
+10. Preparing the Data for Modeling
+Description: The dataset has been separated into features (X) and the target variable (Y). The data has then been split into training and testing sets to allow for model training and evaluation.
+11. Model Training and Evaluation
+Description: A RandomForestClassifier model has been trained on the training data. Predictions have been made on both training and testing data. The model's performance has been evaluated using accuracy scores, confusion matrix, and classification reports for both datasets.
+12. Summary of Results
+Description: The model's accuracy on training and testing data has been summarized. Insights based on the confusion matrix and classification report have been provided to highlight the model's effectiveness in identifying fraudulent transactions.
+13. Conclusions
+Description: Conclusions have been drawn based on the analysis and model evaluation, emphasizing the key findings and the overall performance of the model in detecting fraudulent transactions.
+
